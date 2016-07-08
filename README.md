@@ -1,5 +1,7 @@
 # Dark Magic
 
+![DarkMagic](http://i.imgur.com/gYjQ5S8.png)
+
 DarkMagic is a rich, comprehensive set of utility functions and modules for
 Elixir that are useful for everyday programming.
 
