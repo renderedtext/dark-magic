@@ -1,0 +1,2 @@
+defmodule DarkMagic do
+end
