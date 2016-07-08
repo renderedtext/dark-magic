@@ -1,4 +1,7 @@
 defmodule DarkMagic.Range do
+  import Extension
+  extends Range
+
   @doc ~S"""
   Test if two ranges overlap
 
