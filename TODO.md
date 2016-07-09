@@ -23,6 +23,27 @@ Function                        | Description
 ------------------------------- | ------------------------------------------
 List.wrap(value)                | Wraps its argument in an list unless it is already a list.
 
+## Range
+
+Function                        | Description
+------------------------------- | ------------------------------------------
+Range.intersection(r1, r2)      | Returns the intersection of two ranges
+Range.union(r1, r2)             | Returns the union of two ranges
+Range.without(r1, r2)           | Returns parts of first range that don't include the second range
+Range.overlap?(r1, r2)          | Check if two ranges overlap
+Range.subset?(r1, r2)           | Check if the second range is a subset of the first range
+
+## RangeSet - List of ranges
+
+Function                        | Description
+------------------------------- | ------------------------------------------
+Range.new(ranges...)            | Creates a new range set
+Range.intersection(r1, r2)      | Returns the intersection of two range sets
+Range.union(r1, r2)             | Returns the union of two range sets
+Range.without(r1, r2)           | Returns parts of first range set that don't include the second range set
+Range.overlap?(r1, r2)          | Check if two range sets overlap
+Range.subset?(r1, r2)           | Check if the second range set is a subset of the first range set
+
 ## Time
 
 Function                        | Description
