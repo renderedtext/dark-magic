@@ -16,3 +16,11 @@ Map.transform_keys(map)        | transforms every key with the provided function
 Map.transform_values(map)      | transforms every value with the provided function
 Map.reverse_merge(map1, map2)  | merge two maps in reverse order
 Map.to_query(map)              | converts the map into HTTP query parameters
+
+## List
+
+Function                       | Description
+------------------------------ | ------------------------------------------
+List.wrap(value)               | Wraps its argument in an list unless it is already a list.
+
+
