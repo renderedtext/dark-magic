@@ -62,6 +62,17 @@ patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
 Be sure to merge the latest from "upstream" before making a pull request!
 
+## Design Principles
+
+We care deeply about tests, clarity and performance. Please follow the following
+rules when you make a contribution:
+
+1. Write tests before code
+2. Write documentation
+3. Provide executable examples in your documentation a.k.a doctests
+4. Keep doctests simple and cover only the most useful examples
+5. Tests for edge-cases and complex examples should be placed in test files
+
 ## Licence
 
 The MIT License (MIT)
