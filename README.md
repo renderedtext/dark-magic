@@ -45,11 +45,18 @@ defmodule Example do
 end
 ```
 
-## Issues
+## Development
+
+### Roadmap
+
+Before hitting `1.0` we want to implement all the features on the [TODO
+list](TODO.md).
+
+### Issues
 
 Feel free to submit issues and enhancement requests.
 
-## Contributions
+### Contributions
 
 Please refer to each project's style guidelines and guidelines for submitting
 patches and additions. In general, we follow the "fork-and-pull" Git workflow.
@@ -62,7 +69,7 @@ patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
 Be sure to merge the latest from "upstream" before making a pull request!
 
-## Design Principles
+### Design Principles
 
 We care deeply about tests, clarity and performance. Please follow the following
 rules when you make a contribution:
