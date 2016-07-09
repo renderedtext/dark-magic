@@ -1,5 +1,10 @@
 # Dark Magic
 
+DarkMagic is a rich, comprehensive set of utility functions and modules for
+Elixir that are useful for everyday programming.
+
+The complete documentation is available [here](TODO).
+
 ## Installation
 
 To use DarkMagic with your projects, edit your `mix.exs` file and add it as a
@@ -12,6 +17,31 @@ end
 
 def application do
   [applications: [:dark_magic]]
+end
+```
+
+## Quick Introduction
+
+The following line includes `DarkMagic` in your module and extends Elixir's core
+modules.
+
+``` elixir
+use DarkMagic
+```
+
+Example:
+
+``` elixir
+defmodule Example do
+  use DarkMagic
+
+  def example_calculation do
+    rangeA = 11..20
+    rangeB = 15..25
+
+    # dark magic's extensions for the core Elixir library
+    Range.overlap?(range_a, range_b)
+  end
 end
 ```
 
