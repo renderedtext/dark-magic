@@ -5,8 +5,8 @@ contribute to this list.
 
 ## Map
 
-function                       | description
---------------------------------------------------------------------------
+Function                       | Description
+------------------------------ | ------------------------------------------
 Map.deep_merge(map1, map2)     | deep merges two maps
 Map.invert(map)                | inverts keys and values
 Map.compact(map)               | removes nil values
