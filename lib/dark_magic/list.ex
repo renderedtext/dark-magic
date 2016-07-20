@@ -12,12 +12,7 @@ defmodule DarkMagic.List do
       iex> DarkMagic.List.wrap([1, 2])
       [1, 2]
   """
-  def wrap(element) when is_list(element) do
-    element
-  end
-
-  def wrap(element) when not is_list(element) do
-    [element]
-  end
+  def wrap(element) when is_list(element), do: element
+  def wrap(element) when not is_list(element), do: [element]
 
 end
