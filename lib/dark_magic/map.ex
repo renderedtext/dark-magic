@@ -19,4 +19,18 @@ defmodule DarkMagic.Map do
   def deep_merge(first_map, second_map) do
     second_map
   end
+
+
+  @doc ~S"""
+  Tranform every key in the map with the given function.
+
+  # Examples
+      iex> %{"a" => 1, "b" => 2} |> DarkMagic.Map.transform_keys(&String.upcase/1)
+      %{"A" => 1, "B" => 2}
+  """
+  def transform_keys(map, fun) do
+    map
+    |> Enum.map(fn({key, value}) -> {fun.(key), value} end)
+    |> Map.new
+  end
 end
