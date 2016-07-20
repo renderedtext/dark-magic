@@ -33,4 +33,18 @@ defmodule DarkMagic.Map do
     |> Enum.map(fn({key, value}) -> {fun.(key), value} end)
     |> Map.new
   end
+
+
+  @doc ~S"""
+  Tranform every value in the map with the given function.
+
+  # Examples
+      iex> %{"a" => 2, "b" => 3} |> DarkMagic.Map.transform_values(fn(value) -> value * value end)
+      %{"a" => 4, "b" => 9}
+  """
+  def transform_values(map, fun) do
+    map
+    |> Enum.map(fn({key, value}) -> {key, fun.(value)} end)
+    |> Map.new
+  end
 end
