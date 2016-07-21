@@ -47,4 +47,16 @@ defmodule DarkMagic.Map do
     |> Enum.map(fn({key, value}) -> {key, fun.(value)} end)
     |> Map.new
   end
+
+
+  @doc ~S"""
+  Tranform every key in the map into a string.
+
+  # Examples
+      iex> %{a: 1, b: 2} |> DarkMagic.Map.stringify_keys
+      %{"a" => 1, "b" => 2}
+  """
+  def stringify_keys(map) do
+    map |> transform_keys(&to_string/1)
+  end
 end
