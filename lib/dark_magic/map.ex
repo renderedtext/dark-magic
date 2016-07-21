@@ -59,4 +59,16 @@ defmodule DarkMagic.Map do
   def stringify_keys(map) do
     map |> transform_keys(&to_string/1)
   end
+
+
+  @doc ~S"""
+  Tranform every key in the map into an atom.
+
+  # Examples
+      iex> %{"a" => 1, "b" => 2} |> DarkMagic.Map.atomize_keys
+      %{a: 1, b: 2}
+  """
+  def atomize_keys(map) do
+    map |> transform_keys(&String.to_atom/1)
+  end
 end
